@@ -255,7 +255,7 @@ def pilih_super():
 		jalan('\033[1;93m[✺] Getting IDs \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
-		for s in z['wifi']:
+		for s in z['data']:
 			id.append(s['id'])
 
 	elif peak =="2":
